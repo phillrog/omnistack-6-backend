@@ -1,0 +1,12 @@
+{
+  "name": "omnistack-6-backend",
+  "version": "1.0.0",
+  "description": "Curso Omni Stack 6",
+  "main": "index.js",
+  "repository": "https://github.com/phillrog/omnistack-6-backend",
+  "author": "(Phillipe Roger Souza <phillirog@hotmail.com>)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
