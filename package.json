@@ -6,7 +6,15 @@
   "repository": "https://github.com/phillrog/omnistack-6-backend",
   "author": "(Phillipe Roger Souza <phillirog@hotmail.com>)",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.9.20"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
