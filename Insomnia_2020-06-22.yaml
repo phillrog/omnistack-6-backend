@@ -1,0 +1,169 @@
+_type: export
+__export_format: 4
+__export_date: 2020-06-23T02:45:40.443Z
+__export_source: insomnia.desktop.app:v2020.2.2
+resources:
+  - _id: req_9ec303aec76f4935b4f839c108e5349a
+    authentication: {}
+    body:
+      mimeType: multipart/form-data
+      params:
+        - description: ""
+          fileName: CAMINHO_IMAGEM.jpg
+          id: pair_d77354f2bebd44ddac2eaa520575b700
+          name: file
+          type: file
+          value: ""
+    created: 1592872041808
+    description: ""
+    headers:
+      - id: pair_1af1897d427449769ea328b4fe104a63
+        name: Content-Type
+        value: multipart/form-data
+    isPrivate: false
+    metaSortKey: -1592872041808
+    method: POST
+    modified: 1592879271115
+    name: Store
+    parameters: []
+    parentId: fld_70844e2ea0d848adb6b5384250d4ab9b
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ baseUrlHeroku }}/boxes/5ef168a16d6258000f7c6f71/files"
+    _type: request
+  - _id: fld_70844e2ea0d848adb6b5384250d4ab9b
+    created: 1592872013484
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1592872013484
+    modified: 1592872013484
+    name: File
+    parentId: wrk_5081d598682745a0b6e31b1a68b28c15
+    _type: request_group
+  - _id: wrk_5081d598682745a0b6e31b1a68b28c15
+    created: 1592871062904
+    description: ""
+    modified: 1592871062904
+    name: OmniStack6.0
+    parentId: null
+    scope: null
+    _type: workspace
+  - _id: req_73c6db269cfe4d47a4a838702f66b588
+    authentication: {}
+    body: {}
+    created: 1592877448746
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1592871115043
+    method: GET
+    modified: 1592879027743
+    name: All
+    parameters: []
+    parentId: fld_f6b59e8d71c748f3808471e65e2934f3
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ baseUrlHeroku }}/boxes"
+    _type: request
+  - _id: fld_f6b59e8d71c748f3808471e65e2934f3
+    created: 1592871101725
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1592871101725
+    modified: 1592871101725
+    name: Box
+    parentId: wrk_5081d598682745a0b6e31b1a68b28c15
+    _type: request_group
+  - _id: req_1ac52030ec76423f9166ba8628345cfc
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"title": "Box do Phillipe"
+        }
+    created: 1592871114993
+    description: ""
+    headers:
+      - id: pair_7ad2a05c3b63410ba01dc15f7475400e
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1592871114993
+    method: POST
+    modified: 1592879263895
+    name: Store
+    parameters: []
+    parentId: fld_f6b59e8d71c748f3808471e65e2934f3
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ baseUrlHeroku }}/boxes"
+    _type: request
+  - _id: req_a0f4602387544c40b4ba98a5ec4da7af
+    authentication: {}
+    body: {}
+    created: 1592872696488
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1592645092254.5
+    method: GET
+    modified: 1592879279761
+    name: Show
+    parameters: []
+    parentId: fld_f6b59e8d71c748f3808471e65e2934f3
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ baseUrlHeroku }}/boxes/5ef168a16d6258000f7c6f71"
+    _type: request
+  - _id: env_1bbe04bb12d9c97533911dd9ab8848f8d6882635
+    color: null
+    created: 1592871063084
+    data:
+      baseUrl: http://localhost:3000/api
+      baseUrlDocker: http://localhost:5001/api
+      baseUrlHeroku: https://omnistack6-api.herokuapp.com/api
+    dataPropertyOrder:
+      "&":
+        - baseUrl
+        - baseUrlDocker
+        - baseUrlHeroku
+    isPrivate: false
+    metaSortKey: 1592871063084
+    modified: 1592879018161
+    name: Base Environment
+    parentId: wrk_5081d598682745a0b6e31b1a68b28c15
+    _type: environment
+  - _id: jar_1bbe04bb12d9c97533911dd9ab8848f8d6882635
+    cookies: []
+    created: 1592871063088
+    modified: 1592871063088
+    name: Default Jar
+    parentId: wrk_5081d598682745a0b6e31b1a68b28c15
+    _type: cookie_jar
+  - _id: spc_2858a3a941f14a4da3ea25e49cc0073b
+    contentType: yaml
+    contents: ""
+    created: 1592871062913
+    fileName: OmniStack6.0
+    modified: 1592871062913
+    parentId: wrk_5081d598682745a0b6e31b1a68b28c15
+    _type: api_spec
