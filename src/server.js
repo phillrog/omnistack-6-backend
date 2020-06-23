@@ -5,7 +5,7 @@ const app = express();
 
 const port = 3000;
 
-mongoose.connect('mongodb+srv://oministack6:1234@cluster0-jyyah.mongodb.net/drop-box?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://omnistack6:1234@cluster0-jyyah.mongodb.net/drop-box?retryWrites=true&w=majority',
 {
     useNewUrlParser: true,
     useUnifiedTopology: true
