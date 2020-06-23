@@ -5,5 +5,9 @@ const Box = new mongoose.Schema({
         type: String,
         required: true
     },
-    files: []
+    files: [{ type: mongoose.Schema.Types.ObjectId, ref: "File"}]
+}, {
+    timestamps: true
 });
+
+module.exports = mongoose.model("Box", Box);
