@@ -8,7 +8,6 @@ services:
             dockerfile: Dockerfile
         container_name: omnistack6-backend
         restart: always
-        env_file: .env
         environment:
             - NODE_ENV=prod
             - BACKEND_SERVER=$BACKEND_SERVER
