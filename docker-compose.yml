@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+    omnistack6-backend:
+        image: phillrog/omnistack6-api:prod
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: omnistack6-backend
+        restart: always
+        env_file: .env
+        environment:
+            - NODE_ENV=prod
+        ports:
+            - "5001:5001"
+        networks:
+            - app-network           
+
+networks:
+    app-network:
+        driver: bridge
+
+volumes:
+    dbdata:

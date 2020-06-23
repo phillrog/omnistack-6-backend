@@ -23,6 +23,19 @@ class BoxController {
             return res.send('Box não foi encontrada.');
         }        
     }
+
+    async all(req, res) {
+        try {
+            const box = await Box.find().populate({
+                path: 'files',
+                options: { sort: { createdAt: -1}}
+            });
+            
+            return res.json(box);
+        } catch (error) {
+            return res.send('Boxes não encontradas.');
+        }        
+    }
 }
 
 module.exports = new BoxController();
