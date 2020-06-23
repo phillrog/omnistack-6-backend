@@ -16,9 +16,12 @@ https://omnistack6-api.herokuapp.com/
 
 ### /api/boxes
 
-- get/:id
 - get
 - post
+
+### /api/boxes/:id
+
+- get
 
 ### /api/boxes/:id/files
 
