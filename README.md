@@ -1,6 +1,6 @@
 # Curso Omni Stack 6
 
-[![CircleCI](https://circleci.com/gh/phillrog/omniStack-6-backend.svg?style=svg)](https://circleci.com/gh/phillrog/omniStack-6-backend)
+[![CircleCI](https://circleci.com/gh/phillrog/omnistack-6-backend.svg?style=svg)](https://circleci.com/gh/phillrog/omnistack-6-backend)
 
 # API
 Esta é a api do curso
