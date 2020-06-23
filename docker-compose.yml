@@ -11,6 +11,7 @@ services:
         env_file: .env
         environment:
             - NODE_ENV=prod
+            - BACKEND_SERVER=$BACKEND_SERVER
         ports:
             - "5001:5001"
         networks:

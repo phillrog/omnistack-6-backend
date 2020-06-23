@@ -20,13 +20,6 @@ io.on('connection', socket => {
     })
 });
 
-
-// mongoose.connect('mongodb+srv://omnistack6:1234@cluster0-jyyah.mongodb.net/drop-box?retryWrites=true&w=majority',
-// {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true
-// });
-
 app.use((req, res, next) => {
     req.io = io;
 

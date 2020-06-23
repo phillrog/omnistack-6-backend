@@ -16,6 +16,7 @@ services:
             - MONGO_PORT=$MONGO_PORT
             - MONGO_DB=$MONGO_DB
             - NODE_ENV=development
+            - BACKEND_SERVER=http://localhost:5001
         ports:
             - "5001:5001"
         networks:
